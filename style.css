@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background-color: rgba(241, 233, 245, 0.739);
+}
+
+body.dark-mode {
+  background: rgb(46, 35, 75);
+  color: white;
+}
+
+body.dark-mode .tarefa-selecionada {
+  background-color: rgb(187, 184, 184);
+}
+
+#toggle-dark-mode {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  cursor: pointer;
+  font-size: inherit;
+  font-family: inherit;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+}
+
+#toggle-dark-mode {
+  outline: 0.125rem solid lightblue;
+}
+
+#toggle-dark-mode:hover {
+  opacity: 0.8; /* Diminui a opacidade */
+  /* Ou outras mudanças de estilo: */
+  /* background-color: #333; */
+  /* color: #eee; */
+  /* transform: scale(1.05); /* Aumenta levemente o tamanho */
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+}
+
+p {
+  display: flex;
+  padding: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32rem;
+}
+
+.tarefa-selecionada {
+  background-color: gray;
+}
+
+.completed {
+  text-decoration: line-through solid black;
+}
